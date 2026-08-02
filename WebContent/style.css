@@ -1,78 +1,4 @@
 
-/* === Reset de base === */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-/* === Conteneur principal === */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* === Navigation / Menu === */
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 5px 10px;
-}
-
-/* === Formulaires responsives === */
-form {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-form input,
-form select,
-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    width: 100%;
-}
-
-/* === Tableaux responsives (listes affaires/magistrats) === */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
 /* Sur petit écran : transforme le tableau en cartes empilées */
 @media (max-width: 768px) {
     table, thead, tbody, th, td, tr {
@@ -105,30 +31,6 @@ table {
         white-space: nowrap;
         content: attr(data-label); /* nécessite data-label="Nom" dans le HTML/JSP */
         font-weight: bold;
-    }
-}
-
-/* === Ajustements tablette === */
-@media (max-width: 992px) {
-    .container {
-        padding: 0 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-}
-
-/* === Ajustements mobile === */
-@media (max-width: 576px) {
-    form {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    body {
-        font-size: 15px;
     }
 }
 
