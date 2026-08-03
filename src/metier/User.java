@@ -61,18 +61,19 @@ public class User {
 
 
 
-	public User seConnecter(String iduser, String motdepasse) {
+	public User seConnecter(String nomuser,String prenomuser, String motdepasse) {
         Connection cnx = null;
         BDConnection bd = new BDConnection();
         cnx = bd.seconnecter();
         User us = null;
-        String sql = "select * from user where iduser=? and motdepasse=?";
+        String sql = "select * from user where nomuser=? and prenomuser=? and motdepasse=?";
         PreparedStatement pst = null;
         ResultSet rs = null;
         try {
             pst = cnx.prepareStatement(sql);
-            pst.setString(1, iduser);
-            pst.setString(2, motdepasse);
+            pst.setString(1, nomuser);
+            pst.setString(2, prenomuser);
+            pst.setString(3, motdepasse);
             rs = pst.executeQuery();
             if (rs.next()) {
                 us = new User();

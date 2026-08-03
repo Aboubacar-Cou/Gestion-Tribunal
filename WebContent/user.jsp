@@ -14,8 +14,12 @@
     <legend>Connexion</legend>
     <form action="Sconnecteruser" method="post">
         <p>
-            <label for="iduser">Identifiant :</label>
-            <input type="text" name="iduser" id="iduser" />
+            <label for="nomuser">Nom :</label>
+            <input type="text" name="nomuser" id="nomuser" />
+        </p>
+        <p>
+            <label for="prenomuser">Prenom :</label>
+            <input type="text" name="prenomuser" id="prenomuser" />
         </p>
         <p>
             <label for="motdepasse">Mot de passe :</label>

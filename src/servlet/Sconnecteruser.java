@@ -17,11 +17,12 @@ public class Sconnecteruser extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String iduser = request.getParameter("iduser");
+        String nomuser = request.getParameter("nomuser");
+        String prenomuser = request.getParameter("prenomuser");
         String motdepasse = request.getParameter("motdepasse");
 
         User userMetier = new User();
-        User connecte = userMetier.seConnecter(iduser, motdepasse);
+        User connecte = userMetier.seConnecter(nomuser,prenomuser, motdepasse);
 
         if (connecte != null) {
             HttpSession session = request.getSession();
