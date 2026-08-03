@@ -232,7 +232,7 @@ body {
                 <label for="nom">Nom</label>
                 <div class="input-wrapper">
                     <i class="fa-regular fa-user input-icon"></i>
-                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                    <input type="text" id="nomuser" name="nomuser" placeholder="Entrez votre nom" required>
                 </div>
             </div>
 
@@ -241,7 +241,7 @@ body {
                 <label for="prenom">Prénom</label>
                 <div class="input-wrapper">
                     <i class="fa-regular fa-id-card input-icon"></i>
-                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                    <input type="text" id="prenomuser" name="prenomuser" placeholder="Entrez votre prénom" required>
                 </div>
             </div>
 
@@ -250,19 +250,9 @@ body {
                 <label for="password">Mot de passe</label>
                 <div class="input-wrapper">
                     <i class="fa-solid fa-lock input-icon"></i>
-                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                    <input type="password" id="motdepasse" name="motdepasse" placeholder="••••••••" required>
                 </div>
             </div>
-
-            <!-- Options additionnelles (Modernes) -->
-            <div class="form-options">
-                <label class="remember-me">
-                    <input type="checkbox"> Se souvenir de moi
-                </label>
-                <a href="#" class="forgot-pass">Mot de passe oublié ?</a>
-            </div>
-
-            <!-- Bouton d'action -->
             <button type="submit" class="btn-submit">
                 <span>Se connecter</span>
                 <i class="fa-solid fa-arrow-right"></i>
