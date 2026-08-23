@@ -225,7 +225,7 @@ body {
         </div>
 
         <!-- Formulaire de saisie -->
-        <form action="#" method="POST" class="login-form">
+        <form action="Accueil.jsp" method="POST" class="login-form">
             
             <!-- Champ Nom -->
             <div class="input-group">
@@ -240,7 +240,6 @@ body {
             <div class="input-group">
                 <label for="prenom">Prénom</label>
                 <div class="input-wrapper">
-                    <i class="fa-regular fa-id-card input-icon"></i>
                     <input type="text" id="prenomuser" name="prenomuser" placeholder="Entrez votre prénom" required>
                 </div>
             </div>
@@ -249,13 +248,11 @@ body {
             <div class="input-group">
                 <label for="password">Mot de passe</label>
                 <div class="input-wrapper">
-                    <i class="fa-solid fa-lock input-icon"></i>
                     <input type="password" id="motdepasse" name="motdepasse" placeholder="••••••••" required>
                 </div>
             </div>
             <button type="submit" class="btn-submit">
                 <span>Se connecter</span>
-                <i class="fa-solid fa-arrow-right"></i>
             </button>
         </form>
     </div>

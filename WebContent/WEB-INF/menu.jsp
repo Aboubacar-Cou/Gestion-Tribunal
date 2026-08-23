@@ -55,24 +55,36 @@
 .menu ul li a:hover {
     color: #f39c12;
 }
-.menu ul li a:focus {
+.menu ul li a::visited {
     color: #f39c12;
+    border-bottom: 1px solid black;
 }
+	b{
+	position : absolute;
+	top : 10px;
+	right : 20px;
+	font-size : 25px;
 	
+	}
+	b a{
+	color : white;
+	}
 </style>
 <body>
+		<b><a href="Sconnecteruser" class="active">Se Deconnecter</a></b>
 		<div class="titre">
 			<h1>Tribunal de Grande Instance</h1>
 			<span>Systeme de Gestion des Affaire JuridiQues</span>
 		</div>
-			  <div class="menu">
-                <ul>
-            <li><a href="Accueil.jsp">Accueil</a></li>
-            <li><a href="Enregistrermagistrat">Magistrats</a></li>
-            <li><a href="Enregistreraffaire">Affaires</a></li>
-            <li><a href="Enregistrerpartie">Parties</a></li>
-            <li><a href="Enregistrerparticiper">Participations</a></li>
+	<div class="menu">
+        <ul>
+            <li><a href="Accueil.jsp" class="active">Accueil</a></li>
+            <li><a href="Enregistrermagistrat" class="active">Magistrats</a></li>
+            <li><a href="Enregistreraffaire" class="active">Affaires</a></li>
+            <li><a href="Enregistrerpartie" class="active">Parties</a></li>
+            <li><a href="Enregistrerparticiper" class="active">Participations</a></li>
         </ul>
     </div>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

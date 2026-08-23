@@ -2,5 +2,5 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <footer>
-		@Gestion Enroulement Tribunal 2026
+		&copy Gestion Enroulement Tribunal 2026
 </footer>
